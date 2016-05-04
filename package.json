@@ -14,6 +14,7 @@
     "express": "~4.13.1",
     "express-session": "^1.13.0",
     "locus": "^1.2.0",
+    "moment": "^2.13.0",
     "mongoose": "^4.4.14",
     "morgan": "~1.6.1",
     "nodemon": "^1.9.2",

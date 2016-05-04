@@ -13,7 +13,11 @@ function show (req, res, next){
   })
 }
 
+function showCalendar(req, res, next) {
+  res.render('query')
+}
 
 module.exports = {
-  show: show
+  show: show,
+  showCalendar: showCalendar
 }

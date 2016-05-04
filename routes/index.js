@@ -13,6 +13,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { user: req.user });
 });
 
+
+router.get('/query', reportController.showCalendar)
+
 // twitter oauth login
 router.get('/login', passport.authenticate('twitter'))
 
