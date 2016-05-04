@@ -2,6 +2,7 @@
 <html>
   <head>
     <link href='https://fonts.googleapis.com/css?family=Dosis:400,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+SC:400,900' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +16,6 @@
   <body>
   <div class="navbar-wrapper">
       <div class="container">
-
         <nav class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div class="navbar-header">
@@ -37,7 +37,7 @@
                 <% } %>
               </ul>
               <% if (!user) { %>
-                <a id="nav-bar-login" class="btn btn-xs btn-default" href="/login" role="button">Sign in using Twitter</a>
+                <a id="nav-bar-login" class="btn btn-xs btn-default" href="/login" role="button"></a>
               <% } else { %>
                 <a id="nav-bar-login" class="btn btn-xs btn-default" href="/logout" role="button">Log out</a>
               <% } %>
@@ -62,10 +62,10 @@
         <div class="item active">
           <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
           <div class="container">
-            <div class="carousel-caption">
+            <div  class="carousel-caption">
               <h1>SENTiment</h1>
               <p>Discover the emotions your TWEETS portray. </p>
-              <p><a class="btn btn-lg btn-default" href="/login" role="button">Sign in using Twitter</a></p>
+              <p><a id="twitter-login"class="btn btn-lg btn-default" href="/login" role="button"></a></p>
             </div>
           </div>
         </div>
@@ -129,37 +129,37 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div id="row1" class="row featurette">
         <div class="col-md-7">
-          <h4 class="featurette-heading">Emotion<span class="text-muted">Summary...</span></h4>
-          <p class="lead">Discover what emotions are being pertrayed from your "post" on Twitter. Emotion Summary will provide you with detailed stats in the following categories; Anger, Disgust, Fear, Joy and Sadness. This summary will be generated based on your last 10 Tweets posted.</p>
+          <h4 class="featurette-heading">Emotional<span class="text-muted"> Summary...</span></h4>
+          <p class="lead">Discover what emotions you pertray with your Twitter Post... Emotional tone is inferred from different types of emotions and feelings that people express in their day to day life and especially in social media post. For each of these emotions, the service outputs a score that lies between 0 to 1 that indicates the probability that the emotion came across in your Tweet. In the table generated from your last 10 Tweets, the low value describes the lowest a score - Tweet can receive and can still be considered to comtain that emotion. The high value describes when the sentence or document has a high probability of belonging to that emotion. </p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="/images/EmotionSummary.png" alt="Generic placeholder image">
         </div>
       </div>
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div id="row2" class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Language Style<span class="text-muted"> Summary...</span></h2>
+          <p class="lead">This summary will analyze your last 10 Twitter post. The Language Style Summary will provide you with stats specific to what style of communication your post are presenting based on Analytical, Confident and Tentative communciation.  </p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="/images/LanguageStyle.png" alt="Generic placeholder image">
         </div>
       </div>
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div id="row3" class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Social<span class="text-muted"> Summary...</span></h2>
+          <p class="lead">How social are your Twitter post? Social Summary will provide you with detailed stats based on your level of Openness, Conscientiousness, Extraversion, Agreeableness and Emotional Range from your last 10 Twitter post. </p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="/images/SocialSummary.png" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -171,7 +171,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; SENTiment</p>
       </footer>
 
     </div><!-- /.container -->
