@@ -70,6 +70,6 @@ app.use(function(err, req, res, next) {
 });
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/SENTiment');
+mongoose.connect(process.env.DATABASE_URL);
 
 module.exports = app;
