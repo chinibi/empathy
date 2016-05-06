@@ -23,13 +23,19 @@ body {
   background-color: lightgray;
 }
 
+h3 {
+  opacity: .2;
+}
+
 .text-center {
   text-align: center;
+
 }
 
 input[type='submit']{
-  background-color: purple;
+  background-color: darkgrey;
   color: white;
+
 }
 
 .navbar-wrapper {
