@@ -47,9 +47,8 @@ input[type='submit']{
   z-index: 20;
 }
 
-#row1, #row2, #row3  {
-  background-color: lightgrey;
-  padding-top: 45px;
+.navbar li {
+  font-size: 18px;
 }
 
 .navbar-wrapper > .container {
@@ -71,11 +70,19 @@ input[type='submit']{
 background-color: black;
 }
 
-#nav-brand {
+.navbar-brand {
   color: grey;
   font-family: 'Dosis', sans-serif;
   font-size: 35px;
   background-color: black;
+}
+
+#twitter-login {
+  background-image: url("../images/twitter-logo.png");
+  background-repeat: no-repeat;
+  width: 160px;
+  height: 30px;
+  margin-top: 13px;
 }
 
 #nav-bar-login {
@@ -97,6 +104,15 @@ background-color: black;
 }
 
 @media only screen and (max-device-width: 768px) {
+  .navbar-wrapper {
+    position: unset;
+    top: unset;
+    right: unset;
+    left: unset;
+    margin-top: unset;
+    z-index: unset;
+  }
+
   body {
     border: unset;
   }

@@ -33,8 +33,12 @@ router.get('/logout', function(req, res) {
 
 // query page
 router.get('/watson/setup', function(req, res) {
-  res.render('query', { error: null, user: req.user })
+  if (!req.user) res.redirect("/login")
+  else {
+    res.render('query', { error: null, user: req.user })
+  }
 })
+
 router.get('/watson/setup/ajax', reportController.reportIndex)
 
 // third party api calls

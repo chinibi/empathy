@@ -11,16 +11,14 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="/">About</a></li>
-          <li class="dropdown">
-          </li>
+          <li><a href="/">About</a></li>
         <% if (user) { %>
           <li><a href="/watson/setup">Analyze/View</a></li>
         <% } %>
         </ul>
         <ul class="nav navbar-nav navbar-right">
         <% if (!user) { %>
-          <li><a id="nav-bar-login" class="btn btn-xs btn-default" href="/login" role="button"><div id="twitter-login"></div></a></li>
+          <li><a id='twitter-login' href="/login"></a></li>
         <% } else { %>
           <li><a href="/logout">Log out </a></li>
         <% } %>
