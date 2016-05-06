@@ -25,34 +25,10 @@
 </head>
 
 <body>
-  <!-- header -->
-  <div class="navbar-wrapper">
-    <nav class="navbar navbar-inverse navbar-static-top">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a id="nav-brand" class="navbar-brand" href="/">SENTiment</a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul id="navbar" class="nav navbar-nav">
-          <li class="active"><a href="/">ABOUT</a></li>
-          <% if (user) { %>
-          <li><a href="/watson/setup">ANALYZE/VIEW</a></li>
-          <% } %>
-        </ul>
-        <% if (!user) { %>
-          <a id="nav-bar-login" class="btn btn-xs btn-default" href="/login" role="button"><img src="images/twitter-logo.png"></a>
-        <% } else { %>
-          <a id="nav-bar-login" class="btn btn-xs btn-default" href="/logout" role="button">LOG OUT</a>
-        <% } %>
-      </div>
-    </nav>
-  </div>
-
+  <header>
+    <%- include _navbar.ejs %>
+  </header>
+  
   <!-- actual body  -->
   <div class='jumbotron text-center'>
     <div class='container'>
