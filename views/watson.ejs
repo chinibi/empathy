@@ -55,7 +55,11 @@
 
     <!-- <! FACEBOOK SHARE BUTTON !> -->
 
+<<<<<<< HEAD
     <div class="fb-share-button" data-href="http://radiant-dawn-55380.herokuapp.com/watson/show/<%=reportId%>" data-layout="button_count" data-mobile-iframe="true"></div>
+=======
+    <div class="fb-share-button" data-href="http://fierce-coast-84484.herokuapp.com/watson/show/<%=reportId%>" data-layout="button_count" data-mobile-iframe="true"></div>
+>>>>>>> cf6531bea2499e88d08ec17fae816a6c765fcbb9
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -67,17 +71,65 @@
 
 
     <!-- <! TWEET BUTTON !> -->
+<<<<<<< HEAD
     <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://radiant-dawn-55380.herokuapp.com/watson/show/<%=reportId%>" data-text="This is how I am when I tweet, check it out!!!">Tweet</a>
+=======
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://fierce-coast-84484.herokuapp.com/watson/show/<%=reportId%>" data-text="This is how I am when I tweet, check it out!!!">Tweet</a>
+>>>>>>> cf6531bea2499e88d08ec17fae816a6c765fcbb9
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-    <h1 class="last-report">Tweet Analysis - <%= title %> </h1>
-
+    <h1 class="last-report">Tweet Analysis <%= title %> </h1>
     <!-- <div class="chart1"> -->
-    <div class="chart1" id='emo-chart'></div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="chart1" id='emo-chart'></div>
+      </div>
+      <div class="col-md-6">
+        <div class="chart-text1">
+        <div class="word-wrap">
+        <h5>EMOTIONS</h5>
+        <p>Anger - Evoked due to injustice, conflict, humiliation, negligence or betrayal. If anger is active, the individual attacks the target, verbally or physically. If anger is passive, the person silently sulks and feels tension and hostility.</p>
+        <p>Disgust - An emotional response of revulsion to something considered offensive or unpleasant. It is a sensation that refers to something revolting.</p>
+        <p>Fear - A response to impending danger. It is a survival mechanism that is a reaction to some negative stimulus. It may be a mild caution or an extreme phobia.</p>
+        <p>Joy - Joy or happiness has shades of enjoyment, satisfaction and pleasure. There is a sense of well-being, inner peace, love, safety and contentment.</p>
+        <p>Sadness - Indicates a feeling of loss and disadvantage. When a person can be observed to be quiet, less energetic and withdrawn, it may be inferred that sadness exists.</p>
+        </div>
+        </div>
+      </div>
+    </div>
     <!-- </div> -->
-    <div class="chart2" id='lang-chart'></div>
-    <div class="chart3" id='soc-chart'></div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="chart2" id='lang-chart'></div>
+      </div>
+      <div class="col-md-6">
+        <div class="chart-text2">
+        <div class="container">
+        <h5>LANGUAGE STYLE</h5>
+        <p>Analytic - A person's reasoning and analytical attitude about things.</p>
+        <p>Confidence - A persons degree of certainty.</p>
+        <p>Tenative - A persons degree of inhibition.</p>
+        </div>
+        </div>
+        </div>
+    </div>
 
+    <div class="row">
+      <div class="col-md-6">
+        <div class="chart3" id='soc-chart'></div>
+     </div>
+    <div class="col-md-6">
+        <div class="chart-text3">
+        <div class="container">
+        <h5>SOCIAL SUMMARY</h5>
+        <p>Openness - The extent a person is open to experience a variety of activities.</p>
+        <p>Conscientiousness - The tendency to act in an organized or thoughtful way.</p>
+        <p>Extraversion - The tendency to seek stimulation in the company of others.</p>
+        <p>Agreeableness - The tendency to be compassionate and cooperative towards others.</p>
+        <p>Nueroticism - The extent a persons emotion is sensitive to the environment.</p>
+        </div>
+      </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>

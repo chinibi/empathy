@@ -1,5 +1,5 @@
 body {
-  padding-bottom: 40px;
+  padding-bottom: 0px;
   color: white;
   font-family: 'Dosis', sans-serif;
   background-color: white;
@@ -60,6 +60,7 @@ background-color: black;
 }
 
 /* Carousel base class */
+/*Twitter login button image on index page*/
 #twitter-login {
   background-image: url("../images/twitter-logo.png");
   background-repeat: no-repeat;
@@ -67,20 +68,24 @@ background-color: black;
   height: 30px;
 }
 
+/*Image for carousel*/
 #think-twitter {
   background-position: center bottom;
 }
 
+/*Image for carousel*/
 #think-sentiment {
   background-position: center bottom;
 }
 
+/*Image for carousel*/
 #think-tweet {
   background-position: center bottom;
 }
 
-#circle-text {
-  background-color: lightgrey;
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
 }
 
 /* Since positioning the image, we need to help out the caption */
@@ -90,7 +95,6 @@ background-color: black;
 }
 
 /* Declare heights because of positioning of img element */
-
 .carousel .item {
   height: auto;
   background-color: #777;
@@ -194,45 +198,55 @@ background-color: black;
   }
 }
 
-
-.select-reports {
-  color: darkgrey;
-  text-align: center;
-  margin-top: -50px;
-}
-
+/*Reports history*/
 .last-report {
-  color: darkgrey;
-  margin-top: 45px;
-  margin-left: 20px;
-  border: 5px solid darkgrey;
+  color: white;
+  background-color: lightgrey;
+  border: 10px double white;
+  margin-top: -40px;
+  margin-bottom: -20px;
+  margin-left: 0px
+
 }
 
-.chart1, .chart3 {
+/*Chart analysis*/
+.chart1, .chart2, .chart3 {
   background-color: lightgrey;
-  width: 1045px;
   padding: 10px;
-  border: 10px solid darkgrey;
+  border: 10px double white;
   margin-top: 25px;
+  margin-bottom: -25px
 }
 
-.chart2 {
+/*Chart text analysis*/
+.chart-text1, .chart-text2, .chart-text3 {
+  height: 245px;
+  width: 100%;
+  float: right;
+  color: grey;
+  margin-top: 25px;
+  margin-right: 15px;
+  margin-left: -30px;
+  margin-bottom: 14px;
+  border: 6px solid white;
   background-color: lightgrey;
-  width: 1045px;
-  padding: 10px;
-  border: 10px solid darkgrey;
-  margin-top: 0px;
-  margin-bottom: -25px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 11px;
 }
 
+.word-wrap {
+  overflow: auto;
+  padding-left: 3%;
+}
+
+/*Social media share keys*/
 .fb-share-button {
-  margin-top: 10px;
-  margin-left: 940px;
+  margin-top: -10px;
+  margin-left: 910px;
 }
-
 .twitter-share-button {
-  margin-top: 10px;
-  margin-left: 940px;
+  margin-top: 0px;
+  margin-left: 1020px;
 }
 
 .report-history {
