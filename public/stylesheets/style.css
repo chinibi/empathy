@@ -110,7 +110,18 @@ background-color: black;
 .image {
   margin-bottom: 50px;
 }
+/* MOBILE VIEW */
 
+@media (max-width: 570px){
+  body{
+    border: 16px solid;
+  }
+  #myCarousel {
+    height: auto;
+    margin-top: 35px;
+    margin-bottom: 0px;
+  }
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
