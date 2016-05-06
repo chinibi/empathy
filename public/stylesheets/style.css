@@ -242,12 +242,26 @@ background-color: black;
 
 /*Social media share keys*/
 .fb-share-button {
-  /*margin-top: -10px;
-  margin-left: 910px;*/
+  margin-right: 25px;
+  float: right;
+}
+.FB-bt {
+  margin-top: 34px;
+}
+@media (max-width: 930px) {
+  .FB-bt {
+
+  }
+  .fb-share-button {
+
+  }
+  .twitter-share-button {
+
+  }
 }
 .twitter-share-button {
-  /*margin-top: 0px;
-  margin-left: 1020px;*/
+  margin-top: 0px;
+  float: right;
 }
 
 .report-history {
