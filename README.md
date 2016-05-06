@@ -2,17 +2,15 @@
 
 ![](./public/images/SentimentImage.png)
 
-Our initial goal was to build an app that provies real value to its users. Now days everyone has public conversation on social media platforms with friends and strangers. We want the to make users aware of how they look when they participate in an online conversation. 
+Our initial goal was to build an app that provides real value to its users. Nowadays everyone has public conversations on social media platforms with friends and strangers. We want to help users become more aware of how their "Tweets" are being percieved in online conversations. 
 
-We decided to build SENTiment, a web app that retrieves your twitter posts, sends them through IBM Watson's Tone Analyzer, and then composes a sentiment analysis report of your tweets. By providing user with this information we make them aware of how they look and they can modify their tone when posting on social media if needed.
+We decided to build SENTiment, a web app that retrieves your twitter posts, sends them through IBM Watson's Tone Analyzer, and then composes a sentiment analysis report of those tweets. By providing this information we make users aware of how they look and if they want they can modify their tone next time they post on social media if needed.
 
 The approach was simple, request to the Twitter API user's tweets and apply to them some treatment so the IBM Watson API accept them and give us back the report for the given Tweets.
 
 Check it out!!!
 
-Link to app - 
-
-
+[SENTiment](http://radiant-dawn-55380.herokuapp.com/) 
 
 [Pitch Deck on Google docs.](https://docs.google.com/presentation/d/1gLL5K8bnQC0_a563k9mCnNnDUxLli_goIzNYAYA6PsM/edit?usp=sharing)
 
