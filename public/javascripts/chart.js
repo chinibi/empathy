@@ -67,9 +67,10 @@ function drawSocialChart() {
   ]);
 
   var options = {
-    title: 'Emotions',
+    title: 'Social Tones',
     legend: {position: 'none'},
-    hAxis: {maxValue: 1.0}
+    hAxis: {maxValue: 1.0},
+    chartArea: {left: 120}
   }
   var chart = new google.visualization.BarChart(document.getElementById('soc-chart'));
   chart.draw(data, options);
@@ -99,4 +100,10 @@ $.ajax({
   personalities.forEach(function(personality, index) {
     socialScore[personality] = soc[index].score
   })
+})
+
+$(window).resize(function() {
+  drawEmotionChart()
+  drawLanguageChart()
+  drawSocialChart()
 })
