@@ -88,7 +88,7 @@ background-color: black;
 
 .carousel {
   height: 500px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 /* Since positioning the image, we need to help out the caption */
@@ -231,8 +231,8 @@ background-color: black;
   border: 6px solid white;
   background-color: lightgrey;
   font-family: 'Dosis', sans-serif;
-  font-size: 11px;
-  /*overflow-y: auto;*/
+  font-size: 16px;
+  overflow-y: auto;
 }
 
 .word-wrap {
