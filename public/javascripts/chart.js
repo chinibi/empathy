@@ -25,8 +25,7 @@ function drawEmotionChart() {
   var options = {
     title: 'Emotions',
     legend: {position: 'none'},
-    hAxis: {maxValue: 1.0},
-    width: 500
+    hAxis: {maxValue: 1.0}
   }
   var chart = new google.visualization.BarChart(document.getElementById('emo-chart'));
   chart.draw(data, options);
@@ -47,8 +46,7 @@ function drawLanguageChart() {
   var options = {
     title: 'Language Style',
     legend: {position: 'none'},
-    hAxis: {maxValue: 1.0},
-    width: 500
+    hAxis: {maxValue: 1.0}
   }
   var chart = new google.visualization.BarChart(document.getElementById('lang-chart'));
   chart.draw(data, options);
@@ -57,8 +55,8 @@ function drawLanguageChart() {
 function drawSocialChart() {
   // Define the chart to be drawn.
   var data = new google.visualization.DataTable();
-  data.addColumn('string', 'Emotion');
-  data.addColumn('number', 'Probability');
+  data.addColumn('string', 'Social Tones');
+  data.addColumn('number', 'Raw Score');
   data.addColumn({type: 'string', role: 'style'})
   data.addRows([
    ['Openness', socialScore.openness, 'red'],
@@ -71,8 +69,7 @@ function drawSocialChart() {
   var options = {
     title: 'Emotions',
     legend: {position: 'none'},
-    hAxis: {maxValue: 1.0},
-    width: 500
+    hAxis: {maxValue: 1.0}
   }
   var chart = new google.visualization.BarChart(document.getElementById('soc-chart'));
   chart.draw(data, options);
