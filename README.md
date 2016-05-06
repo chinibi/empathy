@@ -24,6 +24,16 @@ When you log in with Twitter you're sent to a profile page where you can enter a
 
 
 
+#Wireframes
+
+![](./public/images/WireFrame1.png)
+
+![](./public/images/WireFrame2.png)
+
+![](./public/images/WireFrame3.png)
+
+
+
 ## Technologies Used: 
 
 | Technology                   | Role                                     |
