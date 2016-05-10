@@ -2,28 +2,6 @@ var mongoose = require('mongoose')
 var Report = require("../models/report")
 var User = require("../models/user")
 
-// function showReport(req, res, next) {
-//   var findReport = Report.findById(req.params.id).exec()
-//
-//   var findUser = findReport
-//     .then((report) => {
-//     return User.findOne({id: report.user_id}).exec()
-//     })
-//     .catch((err) => res.redirect('/'))
-//
-//   findUser.then((user) => {
-//     var id = (req.user ? req.user.id : null)
-//     res.render('watson', {
-//       text: reportData.text,
-//       user: id,
-//       reportId: req.params.id,
-//       title: reportData.report_name,
-//       whoseReport: user.displayname
-//     })
-//   })
-//   .catch((err) => res.redirect('/'))
-// }
-
 function showReport(req, res, next) {
   var findReport = {
     data: null,
