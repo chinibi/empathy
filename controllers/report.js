@@ -2,25 +2,49 @@ var mongoose = require('mongoose')
 var Report = require("../models/report")
 var User = require("../models/user")
 
+// function showReport(req, res, next) {
+//   var findReport = Report.findById(req.params.id).exec()
+//
+//   var findUser = findReport
+//     .then((report) => {
+//     return User.findOne({id: report.user_id}).exec()
+//     })
+//     .catch((err) => res.redirect('/'))
+//
+//   findUser.then((user) => {
+//     var id = (req.user ? req.user.id : null)
+//     res.render('watson', {
+//       text: reportData.text,
+//       user: id,
+//       reportId: req.params.id,
+//       title: reportData.report_name,
+//       whoseReport: user.displayname
+//     })
+//   })
+//   .catch((err) => res.redirect('/'))
+// }
+
 function showReport(req, res, next) {
-  Report.findById(req.params.id, function (err, report) {
-    if (err) res.redirect('/')
-    else {
-      User.findOne({id: report.user_id}, function (err2, user) {
-        if (err) res.redirect('/')
-        else {
-          var id = (req.user ? req.user.id : null)
-          res.render('watson', {
-            text: report.text,
-            user: id,
-            reportId: req.params.id,
-            title: report.report_name,
-            whoseReport: user.displayname
-          })
-        }
+  var findReport = {
+    data: null,
+    promise: Report.findById(req.params.id).exec()
+  }
+
+  findReport.promise
+    .then((report) => {
+      findReport.data = report
+      return User.findOne({id: report.user_id}).exec()
+    })
+    .then((user) => {
+      res.render('watson', {
+        text: findReport.data.text,
+        user: (req.user ? req.user.id : null),
+        reportId: req.params.id,
+        title: findReport.data.report_name,
+        whoseReport: user.displayname
       })
-    }
-  })
+    })
+    .catch((err) => res.redirect('/'))
 }
 
 var reportIndex = function (req, res) {
