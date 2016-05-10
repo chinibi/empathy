@@ -2,7 +2,7 @@
 
 ![](./public/images/SentimentImage.png)
 
-Our initial goal was to build an app that provides real value to its users. Nowadays everyone has public conversations on social media platforms with friends and strangers. We want to help users become more aware of how their "Tweets" are being percieved in online conversations. 
+Our initial goal was to build an app that provides real value to its users. Nowadays everyone has public conversations on social media platforms with friends and strangers. We want to help users become more aware of how their "Tweets" are being percieved in online conversations.
 
 We decided to build SENTiment, a web app that retrieves your twitter posts, sends them through IBM Watson's Tone Analyzer, and then composes a sentiment analysis report of those tweets. By providing this information we make users aware of how they look and if they want they can modify their tone next time they post on social media if needed.
 
@@ -10,7 +10,7 @@ The approach was simple, request to the Twitter API user's tweets and apply to t
 
 Check it out!!!
 
-[SENTiment](http://radiant-dawn-55380.herokuapp.com/) 
+[SENTiment](http://sentiment-ga.herokuapp.com/) 
 
 [Pitch Deck on Google docs.](https://docs.google.com/presentation/d/1gLL5K8bnQC0_a563k9mCnNnDUxLli_goIzNYAYA6PsM/edit?usp=sharing)
 
@@ -32,7 +32,7 @@ When you log in with Twitter you're sent to a profile page where you can enter a
 
 
 
-## Technologies Used: 
+## Technologies Used:
 
 | Technology                   | Role                                     |
 | ---------------------------- | ---------------------------------------- |
@@ -67,7 +67,7 @@ We were struggling to come up with a good way to give an overall report of many 
 
 [Git repository on GitHub](https://github.com/chinibi/empathy.git)
 
-Created by 
+Created by
 
 - [Carlos Allende](https://github.com/vanpeta) (Back-end and Scrum master)
 - [Trevor Pham](https://github.com/chinibi) (Back-end and Github manager)
