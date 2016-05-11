@@ -28,8 +28,14 @@
   <header>
     <%- include _navbar.ejs %>
   </header>
-  
+
   <!-- actual body  -->
+  <% if (error) { %>
+    <div class='alert alert-danger text-center' role='alert'>
+      There are no tweets in this date range or you're searching too far back in your history.
+    </div>
+  <% } %>
+  
   <div class='jumbotron text-center'>
     <div class='container'>
       <h1>Start your Analysis</h1>
@@ -47,12 +53,6 @@
 
   <div id='body' class='container-fluid'>
     <div class='gray-bg container-fluid'>
-      <% if (error) { %>
-        <div class='alert alert-danger text-center' role='alert'>
-          There are no tweets in this date range or you're searching too far back in your history.
-        </div>
-      <% } %>
-
       <h1 class="report-history">Report History</h1>
       <div id="report-list">
         <ul id="reports" class="list-group"></ul>

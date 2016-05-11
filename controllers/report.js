@@ -30,7 +30,6 @@ var reportIndex = function (req, res) {
     if (err) {
       res.send(err)
     }
-    console.log ("show the reports")
     res.json(reports)
   })
 }
