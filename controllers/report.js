@@ -12,7 +12,7 @@ function showReport(req, res, next) {
     .then((report) => {
       findReport.data = report
       return User.findOne({id: report.user_id}).exec()
-    })
+    }, (err) => res.redirect('/'))
     .then((user) => {
       res.render('watson', {
         text: findReport.data.text,
@@ -21,8 +21,7 @@ function showReport(req, res, next) {
         title: findReport.data.report_name,
         whoseReport: user.displayname
       })
-    })
-    .catch((err) => res.redirect('/'))
+    }, (err) => res.redirect('/'))
 }
 
 var reportIndex = function (req, res) {
