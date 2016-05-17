@@ -3,10 +3,8 @@ var router = express.Router();
 var passport = require('passport');
 
 var watsonController = require('../controllers/watson');
-var tweetsController = require('../controllers/tweets');
 var reportController = require('../controllers/report');
 var apiController    = require('../controllers/api');
-var locus = require('locus');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -32,19 +30,13 @@ router.get('/logout', function(req, res) {
 })
 
 // query page
-router.get('/watson/setup', function(req, res) {
-  if (!req.user) res.redirect("/login")
-  else {
-    res.render('query', { error: null, user: req.user })
-  }
-})
+router.get('/watson/setup', watsonController.authorize)
 
 router.get('/watson/setup/ajax', reportController.reportIndex)
 
 // third party api calls
 router.get('/watson', watsonController.analyze)
 router.post('/watson/analyze', watsonController.analyze)
-router.get('/tweets', tweetsController.show)
 
 // show report from db
 router.get('/watson/show/:id', reportController.showReport)
