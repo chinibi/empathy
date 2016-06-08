@@ -1,6 +1,5 @@
 body {
   padding-bottom: 0px;
-  color: white;
   font-family: 'Dosis', sans-serif;
   background-color: white;
   border: 75px solid;
@@ -230,7 +229,6 @@ background-color: black;
 
 /*Reports history*/
 .last-report {
-  color: white;
   background-color: lightgrey;
   border: 10px double white;
   /*margin-top: -40px;
