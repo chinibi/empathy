@@ -2,7 +2,7 @@
 
 ![](./public/images/SentimentImage.png)
 
-Our initial goal was to build an app that provides real value to its users. Nowadays everyone has public conversations on social media platforms with friends and strangers. We want to help users become more aware of how their "Tweets" are being percieved in online conversations.
+Our initial goal was to build an app that provides real value to its users. Now-a-days everyone has public conversations on social media platforms with friends and strangers. We want to help users to be more aware of how their "Tweets" are being percieved in online conversations.
 
 We decided to build SENTiment, a web app that retrieves your twitter posts, sends them through IBM Watson's Tone Analyzer, and then composes a sentiment analysis report of those tweets. By providing this information we make users aware of how they look and if they want they can modify their tone next time they post on social media if needed.
 
